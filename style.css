@@ -1203,7 +1203,7 @@ p.process-step-number {
     background-image:
         radial-gradient(transparent, var(--bg-primary) 80%),
         radial-gradient(#18293f9e 0%, transparent 70%);
-    z-index: -1;
+    z-index: -2;
 }
 
 .results-section .subliner {
@@ -1309,4 +1309,31 @@ p.process-step-number {
 .result-card.result-4 {
     --icon: url("img/result-4.png") right center no-repeat;
     --deg: 289deg;
+}
+
+.result-1.rgb {
+    background: 
+        var(--icon),
+        radial-gradient(at 4% 0, #10213ed9, #00000054 65%, transparent) 0 0 / 120% 115% no-repeat,
+        linear-gradient(165deg, #1b2c459e, #000000ad, #02070d), #050c16;    
+}
+.result-2.hsl {
+    background: 
+        var(--icon),
+        radial-gradient(at 4% 0, hsl(217.83deg 58.97% 15.29% / 85.1%), hsl(0deg 0% 0% / 32.94%) 65%, hsl(0deg 0% 0% / 0%)) 0 0 / 120% 115% no-repeat, 
+        linear-gradient(165deg, hsl(215.71deg 43.75% 18.82% / 61.96%), hsl(0deg 0% 0% / 67.84%), hsl(212.73deg 73.33% 2.94%)), hsl(215.29deg 62.96% 5.29%);
+}
+
+.result-3.lab {
+    background: 
+        var(--icon),
+        radial-gradient(at 4% 0, lab(13 1.6 -21.07 / 0.85), lab(0 0 0 / 0.33) 65%, lab(0 0 0 / 0)) 0 0 / 120% 115% no-repeat, 
+        linear-gradient(165deg, lab(18 -0.51 -18.12 / 0.62), lab(0 0 0 / 0.68), lab(2 -0.71 -2.87)), lab(3 -0.45 -6.13);
+}
+
+.result-4.oklch {
+    background:
+        var(--icon),
+        radial-gradient(at 4% 0, oklch(0.25 0.06 260.66 / 0.85), oklch(0 0 0 / 0.33) 65%, oklch(0 0 0 / 0)) 0 0 / 120% 115% no-repeat, 
+        linear-gradient(165deg, oklch(0.3 0.05 258.07 / 0.62), oklch(0 0 0 / 0.68), oklch(0.13 0.02 244.23)), oklch(0.15 0.03 254.11);
 }
