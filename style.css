@@ -1379,15 +1379,8 @@ p.process-step-number {
 .solutions-section::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 50%;
-    width: 800px;
-    height: 600px;
-    margin-left: -400px;
-    margin-top: -100px;
-    background-image:
-        radial-gradient(transparent, var(--bg-primary) 80%),
-        radial-gradient(#18293f9e 0%, transparent 70%);
+    inset: 10%;
+    background-image: radial-gradient(#112f5cd1, transparent 50%);
     z-index: -1;
 }
 
